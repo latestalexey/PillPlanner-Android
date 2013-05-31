@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/absbackground"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/padding_large"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6cb141"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_medium"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:text="Add new medication"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:src="@drawable/ab_add" />
+    </LinearLayout>
+
+</LinearLayout>

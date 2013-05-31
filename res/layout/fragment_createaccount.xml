@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#162e55"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/padding_medium"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Nickname:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Tap to enter name."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Password:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Tap to enter password."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Confirm:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/etPasswordConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Tap to enter password."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_medium"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:layout_weight="1"
+                android:text="Choose icon:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:src="@drawable/usericon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:layout_weight="1"
+                android:text=" or take photo:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:src="@drawable/usericon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_medium"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btnOnline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_weight="1"
+                android:background="#0a77b5"
+                android:gravity="center"
+                android:text="Sync Online"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_weight="1"
+                android:background="#6cb141"
+                android:gravity="center"
+                android:text="Create"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

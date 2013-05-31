@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_small"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/required"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_small"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Medication"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Medication"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_weight="0"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ab_accept" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_medium"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>
